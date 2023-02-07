@@ -1,9 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 import Input from "./components/Input";
-import Todo from "./components/Todo";
-import Done from "./components/Done";
 import Section from "./components/Section";
+import Item from "./components/Item";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -27,7 +26,7 @@ function App() {
           {todos.map(
             (item, index) =>
               !item.state && (
-                <Todo
+                <Item
                   key={index}
                   position={index}
                   todo={item}
@@ -38,7 +37,8 @@ function App() {
         </Section>
         <Section title="DONE">
           {todos.map(
-            (item, index) => item.state && <Done key={index} todo={item} />
+            (item, index) =>
+              item.state && <Item key={index} position={index} todo={item} />
           )}
         </Section>
       </div>
