@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input test should test input snapshot 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    className="todo-input"
+    onChange={[Function]}
+    placeholder="Add todo"
+    type="text"
+    value=""
+  />
+</form>
+`;

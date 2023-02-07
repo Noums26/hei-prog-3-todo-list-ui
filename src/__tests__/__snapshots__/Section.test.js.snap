@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test empty done section snapshot 1`] = `
+<div
+  className="todo-flex"
+>
+  <h3>
+    DONE
+  </h3>
+  <hr />
+</div>
+`;
+
+exports[`should test empty todo section snapshot 1`] = `
+<div
+  className="todo-flex"
+>
+  <h3>
+    TODO
+  </h3>
+  <hr />
+</div>
+`;
